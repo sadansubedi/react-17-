@@ -1,17 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from 'react-dom';
+import el from './App'
+import Student from './Student';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(el,document.getElementById("2ndroot"));
+//ReactDOM.render(<Student name="Kaley" roll="1001"/>,document.getElementById("root"));
+ReactDOM.render(<Student name="Kaley" roll={100+1}/>,document.getElementById("root"));
+
+// here whether it is class based or function based index.js is same for both ok
+
+/*
+we practice jsx(javascript xml) in APP.js and props concept in Student.js ok 
+*/
